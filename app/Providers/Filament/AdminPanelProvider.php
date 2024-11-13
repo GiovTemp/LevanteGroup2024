@@ -22,7 +22,6 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use App\Filament\Resources\ArticleResource\Widgets\ArticleViewsChart;
 use App\Filament\Resources\CategoryResource\Widgets\CategoryViewsChart;
-use App\Filament\Resources\CommentResource\Widgets\CommentsToBeRevisionedCounter;
 use App\Filament\Resources\UserResource\Widgets\UserCounter;
 
 class AdminPanelProvider extends PanelProvider
@@ -44,8 +43,6 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
-
-                CommentsToBeRevisionedCounter::class,
                 UserCounter::class,
                 ArticleViewsChart::class,
                 CategoryViewsChart::class,

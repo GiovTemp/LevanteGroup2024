@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\CommentResource\Pages;
+namespace App\Filament\Resources\EstimateResource\Pages;
 
-use App\Filament\Resources\CommentResource;
+use App\Filament\Resources\EstimateResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 
-class ListComments extends ListRecords
+class ListEstimates extends ListRecords
 {
-    protected static string $resource = CommentResource::class;
+    protected static string $resource = EstimateResource::class;
 
     protected function getHeaderActions(): array
     {

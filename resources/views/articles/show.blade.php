@@ -34,29 +34,6 @@
         </div>
     </div>
 
-    @auth
-        <div class="row">
-            <div class="col-12">
-                <livewire:comment-create :article="$article" />
-            </div>
-        </div>
-    @else
-        <div class="row">
-            <div class="col-12">
-                <div class="alert alert-info" role="alert">
-                    <a href="{{ route('login') }}" class="alert-link">Login</a> to leave a comment.
-                </div>
-            </div>
-        </div>
-    @endauth
-
-    <div class="row">
-        <div class="col-12">
-            <livewire:comment-list :article="$article" />
-        </div>
-    </div>
-
-
 
 </x-layout>
 
